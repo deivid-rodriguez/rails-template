@@ -101,6 +101,9 @@ def require_package_json_gem
 
   require "bundler/inline"
 
+  system("tree", "/opt/hostedtoolcache/Ruby/3.4.5/x64/lib/ruby/gems/3.4.0/gems/package_json-0.1.0")
+  system("ls", "-la", "/opt/hostedtoolcache/Ruby/3.4.5/x64/lib/ruby/gems/3.4.0/gems/package_json-0.1.0")
+
   gemfile(true) do
     source "https://rubygems.org"
     gem "package_json"
